@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>hw-06</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar container">
+            <div class="logo ">
+                <h2>
+                    <p class="first">WEB</p>
+                    <p class="second">STUDIO</p>
+                </h2>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü Aç/Kapat">☰</button>
+            <div class="hideOnMobile">
+                <ul class="menu">
+                    <li class="nav-item active"><a href="#studio">Studio</a></li>
+                    <li class="nav-item active"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item active"><a href="#contacts">Contacts</a></li>
+                </ul>
+                <ul class="line">
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel:+">+11 (000) 111-11-11</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <div class="close-btn" id="closeModal">&times;</div>
+                <ul class="menu">
+                    <li class="nav-item active"><a href="#studio">Studio</a></li>
+                    <li class="nav-item active"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item active"><a href="#contacts">Contacts</a></li>
+                </ul>
+                <ul class="line">
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel:+">+11 (000) 111-11-11</a></li>
+                </ul>
+                <div class="traling-icons">
+                    <svg class="social-media">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+
+                    <svg class="social-media">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                    <svg class="social-media">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="social-media">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="hero">
+        <div class="people-office"></div>
+        <div class="inner container">
+            <h1 class="hero-text">Effective Solutions for Your Business</h1>
+            <div class="button">
+                <button id="btn" type="button" class="btn" onclick="btn">Order Service</button>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="overlay"></div>
+            <div class="modal">
+                <div class="close-btn" id="closeModal">&times;</div>
+                <h2>Leave your contacts and we will call you back</h2>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <span class="icon-input">
+                        <svg class="icon-name">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                    <input id="name" type="text">
+                </div>
+                <div class="form-input">
+                    <label for="phone">Phone</label>
+                    <span class="icon-input">
+                        <svg class="icon-phone">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                    <input id="phone" type="tel">
+                </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <span class="icon-input">
+                        <svg class="icon-email">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                    <input id="email" type="email">
+                </div>
+                <label for="comment">Comment</label>
+                <textarea id="comment" rows="4" placeholder="Text input"></textarea>
+                <div class="checkbox-container">
+                    <div class="checkbox" id="checkbox">
+
+                        <svg class="icon-checkbox-checked">
+                            <use href="./images/icons.svg#icon-checkbox-checked"></use>
+                        </svg>
+                    </div>
+                    <label for="checkbox">I accept the terms and conditions of the <a href="#">Privacy
+                            Policy</a></label>
+                </div>
+                <button>Send</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="feature section">
+
+        <div class="feature-inner container">
+            <div class="child">
+                <div class="icon">
+                    <svg class="icon-antenna">
+                        <use href="./images/icons.svg#icon-antenna"></use>
+                    </svg>
+                </div>
+                <h3>Strategy</h3>
+                <p>Our goal is to identify the business
+                    problem to walk away with the perfect and creative solution. </p>
+            </div>
+            <div class="child">
+                <div class="icon">
+                    <svg class="icon-clock">
+                        <use href="./images/icons.svg#icon-clock"></use>
+                    </svg>
+                </div>
+                <h3>Punctuality</h3>
+                <p>Bring the key message to the brand's audience for the best price within the shortest possible time.
+                </p>
+            </div>
+            <div class="child">
+                <div class="icon">
+                    <svg class="icon-diagram">
+                        <use href="./images/icons.svg#icon-diagram"></use>
+                    </svg>
+                </div>
+                <h3>Diligence</h3>
+                <p>Research and confirm brands that present the strongest digital growth opportunities and minimize
+                    risk. </p>
+            </div>
+            <div class="child">
+                <div class="icon">
+                    <svg class="icon-astronaut">
+                        <use href="./images/icons.svg#icon-astronaut"></use>
+                    </svg>
+                </div>
+                <h3>Technologies</h3>
+                <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="card-container section">
+        <div class="container">
+            <div class="team">
+                <h2>Our Team</h2>
+            </div>
+            <div class="card-inner">
+
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="images/mark.png" alt="" class="card-image">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="name">Mark Guerrero</h3>
+                        <p class="description">Product Designer</p>
+                    </div>
+                    <div class="traling-icons ">
+                        <svg class=" social-media">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+
+                        <svg class=" social-media">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg class=" social-media">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class=" social-media">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="images/tom.png" alt="Tom Ford images" class="card-image">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="name">Tom Ford</h3>
+                        <p class="description">Frontend Developer</p>
+                    </div>
+                    <div class="traling-icons">
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="images/camila.png" alt="" class="card-image">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="name">Camila Garcia</h3>
+                        <p class="description">Marketing</p>
+                    </div>
+                    <div class="traling-icons">
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="images/daniel.png" alt="" class="card-image">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="name">Daniel Wilson</h3>
+                        <p class="description">UI Designer</p>
+                    </div>
+                    <div class="traling-icons">
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="base section">
+        <div class="project-inner">
+            <div class="portfolio">
+                <h2 class="portfolio-text">Our Portfolio</h2>
+            </div>
+            <div class="row-1 container">
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/banking.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Banking App</h3>
+                        <p>App</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/cashless.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Cashless Payment</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/meditation.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Banking App</h3>
+                        <p>App</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/taxi.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Taxi Service</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/screen.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Screen Illustrations</h3>
+                        <p>Design</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="img">
+                        <img src="images/online.png" alt="">
+                    </div>
+                    <div class="card-content-1">
+                        <h3>Online Courses</h3>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer section">
+        <div class="footer-inner container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>
+                        <p class="footer-first">WEB</p>
+                        <p class="footer-second">STUDIO</p>
+                    </h3>
+                    <p class="footer-second">Increase the flow of customers and sales for your business with digital
+                        marketing &
+                        growth solutions.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <p>Social media</p>
+                    <div class="traling-icons">
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="social-media">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <p>Subscribe</p>
+                    <form>
+                        <label>
+                            <input type="text" name="username" placeholder="     E-mail" />
+                        </label>
+                    </form>
+                </div>
+                <div class="form-button">
+                    <button class="form-btn" type="submit">Subscribe
+                        <svg class="icon-frame">
+                            <use href="./images/icons.svg#icon-frame"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle"); // Menü açma butonu
+            const sidebar = document.querySelector(".sidebar"); // Açılacak menü
+            const closeBtn = document.getElementById("closeModal"); // Menü kapatma butonu
+
+            // Menü açma butonuna tıklanınca sidebar görünür hale gelsin
+            menuToggle.addEventListener("click", function () {
+                sidebar.style.display = "flex"; // Sidebar'ı aç
+            });
+
+            // Kapatma butonuna tıklanınca sidebar gizlensin
+            closeBtn.addEventListener("click", function () {
+                sidebar.style.display = "none"; // Sidebar'ı kapat
+            });
+
+            // Kullanıcı sidebar dışına tıklarsa menü kapansın
+            document.addEventListener("click", function (event) {
+                if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+                    sidebar.style.display = "none"; // Sidebar'ı kapat
+                }
+            });
+        });
+
+
+        function createPopup(id) {
+            let popupNode = document.querySelector(id);
+            let overlay = popupNode.querySelector(".overlay")
+            let closeBtn = popupNode.querySelector(".close-btn");
+            function openPopup() {
+                popupNode.classList.add("active");
+            }
+            function closePopup() {
+                popupNode.classList.remove("active");
+            }
+            overlay.addEventListener("click", closePopup);
+            closeBtn.addEventListener("click", closePopup);
+            return openPopup;
+        }
+        let popup = createPopup("#popup");
+        document.querySelector("#btn").addEventListener("click", popup);
+
+
+        const checkbox = document.getElementById('checkbox');
+
+        checkbox.addEventListener('click', () => {
+            checkbox.classList.toggle('checked');
+        });
+
+        const closeModal = document.getElementById('closeModal');
+        const modal = document.querySelector('.modal');
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
