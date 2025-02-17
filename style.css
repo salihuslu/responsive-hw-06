@@ -234,6 +234,10 @@ header {
 
 }
 
+.btn:hover {
+    background-color: #404BBF;
+}
+
 .feature {
     margin: 0 auto;
 }
@@ -608,6 +612,10 @@ header {
     border-radius: 4px;
     border: none;
     margin-left: 10px;
+}
+
+.form-btn:hover {
+    background-color: #404BBF;
 }
 
 .icon-frame {
@@ -1034,6 +1042,23 @@ header {
 
     .traling-icons {
         padding-bottom: 50px;
+        margin: 0;
+    }
+
+    .child h3 {
+        text-align: left;
+    }
+
+    .footer-logo h3 {
+        margin: 0;
+    }
+
+    .footer-social p {
+        text-align: left;
+    }
+
+    .footer-form {
+        align-items: flex-start;
     }
 }
 
